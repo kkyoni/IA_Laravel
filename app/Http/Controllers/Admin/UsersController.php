@@ -32,7 +32,7 @@ class UsersController extends Controller
     {
         $this->authLayout = 'admin.auth.';
         $this->pageLayout = 'admin.pages.user.';
-        $this->middleware('auth');
+        $this->middleware('Admin');
     }
 
     /* -----------------------------------------------------------------------------------------
