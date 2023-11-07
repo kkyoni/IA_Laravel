@@ -18,7 +18,7 @@ class HomeController extends Controller
     {
         $this->authLayout = 'front.auth.';
         $this->pageLayout = 'front.';
-        //View::share('tenure_values', Setting::where('code','interest_rate_duration')->first('value'));
+        $this->middleware('Front');
     }
     public function index()
     {
