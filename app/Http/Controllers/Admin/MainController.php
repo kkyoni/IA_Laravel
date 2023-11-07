@@ -13,6 +13,7 @@ class MainController extends Controller
     public function __construct(){
         $this->authLayout = 'admin.auth.';
         $this->pageLayout = 'admin.pages.';
+        $this->middleware('Admin');
     }
 
     public function index(){
